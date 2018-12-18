@@ -21,11 +21,45 @@
   }
   img{
     width: 12rem;
-   
+  }
+
+  #contact{
+    -webkit-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.75);
+    background-color:#a6989a;
+    margin: 7em 7em 5em 5em;
+    padding-left: 5em; 
+
+  }
+
+  #contactInput{
+    font-size: 1.2rem;
+  }
+
+  ui.Form.Input.label{
+    font-size: 1.2rem;
+  }
+
+  #contactBG{
+    background-color: rgb(0, 128, 90)
+  }
+
+  .header{
+    font-size:1.2rem;
+  }
+
+  .githubLink{
+
+    font-size:1.2rem;
   }
   
   .card-content{
     float:right;
+  }
+
+  .ui.Form.Input label{
+    color:white;
   }
   
   /* Ends */
@@ -301,6 +335,23 @@ input{
     }
   }
   
+.hiddenGif{
+  width:184.5px;
+  height:100%;
+}
+
+  .aboutMeFont{
+
+    font-family: 'Thasadith', sans-serif;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
   .cd-fixed-bg {
     position: relative;
     min-height: 100vh;
