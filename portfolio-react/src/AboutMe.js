@@ -5,7 +5,7 @@ const AboutMe = props => {
     <div className="col-lg-12 col-md-12 col-sm-12 col-sx-12">
       <div className="container">
         <div className="row">
-          <div className="mx-4 col-lg-5">
+          <div className="mx-4 col-lg-5 col-md-5 col-sm-5 mx-auto">
             <p className="aboutMeFont">Hello.</p>
             <p className="mx-auto aboutMeFont">My name is Aime</p>
             <ul
@@ -31,7 +31,7 @@ const AboutMe = props => {
               </li>
             </ul>
           </div>
-          <div className="mx-auto col-lg-5">
+          <div className="mx-auto col-lg-5 col-md-5 col-sm-5">
             <img className="mx-auto" src="../images/Pictureau3.png" />
           </div>
         </div>

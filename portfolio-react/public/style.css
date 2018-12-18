@@ -27,7 +27,7 @@
     -webkit-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.75);
-    background-color:#a6989a;
+    background-color:lightgreen;
     margin: 7em 7em 5em 5em;
     padding-left: 5em; 
 
@@ -41,16 +41,14 @@
     font-size: 1.2rem;
   }
 
-  #contactBG{
-    background-color: rgb(0, 128, 90)
-  }
 
   .header{
     font-size:1.2rem;
+    text-align: center;
   }
 
   .githubLink{
-
+    text-align: center;
     font-size:1.2rem;
   }
   
@@ -335,11 +333,10 @@ input{
     }
   }
   
-.hiddenGif{
-  width:184.5px;
-  height:100%;
+.subTitleFont{
+  font-family: 'Thasadith', sans-serif;
+  font-size: 2.5rem;
 }
-
   .aboutMeFont{
 
     font-family: 'Thasadith', sans-serif;

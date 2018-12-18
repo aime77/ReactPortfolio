@@ -4,40 +4,58 @@ import { Image, Reveal } from "semantic-ui-react";
 
 const PortfolioCards = props => {
   return (
-    <div className="row col-12">
-      <a
-        className="ui card col-3 mx-3"
-        href="#card-example-link-card"
-        width="150px"
-      >
-        <div className="header">Friend Finder</div>
-        <a
-          className="githubLink"
-          href="https://github.com/aime77/Word-Guess-Game"
-        >
-          GitHUb Link
+    <div>
+      <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
+        <a href="https://nyramirez.github.io/Threat-Alert-P1/">
+          <Reveal animated="move right">
+            <Reveal.Content visible>
+              <Image src="../images/project1.png" size="medium" />
+            </Reveal.Content>
+            <Reveal.Content hidden>
+              <Image src="../images/threatAlert.gif" size="medium" />
+            </Reveal.Content>
+          </Reveal>
         </a>
 
-        <Reveal animated="move">
-          <Reveal.Content visible>
-            <Image src="../images/friendFinder.png" size="medium" />
-          </Reveal.Content>
-          <Reveal.Content hidden>
-            <Image
-              className="hiddenGif"
-              src="../images/friendFinder.gif"
-              size="medium"
-            />
-          </Reveal.Content>
-        </Reveal>
-      </a>
+        <a className="ui card col-6 mx-3 my-0">
+          <div className="header">Threat Alert</div>
+          <a
+            className="GitHubLink"
+            href="https://github.com/nyramirez/Threat-Alert-P1/tree/master"
+          >
+            GitHub Link
+          </a>
+        </a>
+      </div>
 
-      <a className="ui card col-3 mx-3" href="#card-example-link-card">
-        <div className="header">Get a Burger!</div>
-        <a className="meta" href="https://github.com/aime77/Word-Guess-Game">
-          <div className="githubLink"> GitHUb Link</div>
+      <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
+        <a href="https://find-friends-4-ever.herokuapp.com/">
+          <Reveal animated="move">
+            <Reveal.Content visible>
+              <Image src="../images/friendFinder.png" size="medium" />
+            </Reveal.Content>
+            <Reveal.Content hidden>
+              <Image
+                className="hiddenGif"
+                src="../images/friendFinder.gif"
+                size="medium"
+              />
+            </Reveal.Content>
+          </Reveal>
         </a>
 
+        <a className="ui card col-6 mx-3 my-0">
+          <div className="header">Friend Finder</div>
+          <a
+            className="GitHubLink"
+            href="https://github.com/aime77/FriendFinder"
+          >
+            GitHub Link
+          </a>
+        </a>
+      </div>
+
+      <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
         <Reveal animated="move">
           <Reveal.Content visible>
             <Image src="../images/getBurger.png" size="medium" />
@@ -46,61 +64,18 @@ const PortfolioCards = props => {
             <Image src="../images/burger.gif" size="medium" />
           </Reveal.Content>
         </Reveal>
-      </a>
-
-      <a className="ui card col-3 mx-3" href="#card-example-link-card">
-        <div className="header">Word Guess Game</div>
         <a
-          className="githubLink"
-          href="https://github.com/aime77/Word-Guess-Game"
+          className="ui card col-6 mx-3 my-0"
+          href="https://yum-yum-burger-pos.herokuapp.com/"
         >
-          GitHUb Link
+          <div className="header">Get a Burger!</div>
+          <a className="meta" href="https://github.com/aime77/sequalizedBurger">
+            <div className="GitHubLink"> GitHub Link</div>
+          </a>
         </a>
+      </div>
 
-        <Reveal animated="move">
-          <Reveal.Content visible>
-            <Image
-              src="https://react.semantic-ui.com/images/wireframe/square-image.png"
-              size="medium"
-            />
-          </Reveal.Content>
-          <Reveal.Content hidden>
-            <Image
-              src="https://react.semantic-ui.com/images/avatar/large/chris.jpg"
-              size="medium"
-            />
-          </Reveal.Content>
-        </Reveal>
-      </a>
-
-      <a className="ui card col-3 mx-3" href="#card-example-link-card">
-        <div className="header">Threat Alert</div>
-        <a
-          className="githubLink"
-          href="https://github.com/aime77/Word-Guess-Game"
-        >
-          GitHUb Link
-        </a>
-
-        <Reveal animated="move right">
-          <Reveal.Content visible>
-            <Image src="../images/project1.png" size="medium" />
-          </Reveal.Content>
-          <Reveal.Content hidden>
-            <Image src="../images/threatAlert.gif" size="medium" />
-          </Reveal.Content>
-        </Reveal>
-      </a>
-
-      <a className="ui card col-3 mx-3" href="#card-example-link-card">
-        <div className="header">Trivia Game</div>
-        <a
-          className="githubLink"
-          href="https://github.com/aime77/Word-Guess-Game"
-        >
-          GitHUb Link
-        </a>
-
+      <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
         <Reveal animated="move right">
           <Reveal.Content visible>
             <Image src="../images/triviaImage.png" size="medium" />
@@ -109,32 +84,39 @@ const PortfolioCards = props => {
             <Image src="../images/triviaGame.gif" size="medium" />
           </Reveal.Content>
         </Reveal>
-      </a>
-
-      <a className="ui card col-3 mx-3" href="#card-example-link-card">
-        <div className="header">Word Guess Game</div>
         <a
-          className="githubLink"
-          href="https://github.com/aime77/Word-Guess-Game"
+          className="ui card col-6 mx-3 my-0"
+          href="https://aime77.github.io/TriviaGame/"
         >
-          GitHUb Link
+          <div className="header">Trivia Game</div>
+          <a className="GitHubLink" href="https://github.com/aime77/TriviaGame">
+            GitHub Link
+          </a>
         </a>
+      </div>
 
+      <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
         <Reveal animated="move right">
           <Reveal.Content visible>
-            <Image
-              src="https://react.semantic-ui.com/images/wireframe/square-image.png"
-              size="medium"
-            />
+            <Image src="../images/RPG.png" size="medium" />
           </Reveal.Content>
           <Reveal.Content hidden>
-            <Image
-              src="https://react.semantic-ui.com/images/avatar/large/jenny.jpg"
-              size="medium"
-            />
+            <Image src="../images/RPG.gif" size="medium" />
           </Reveal.Content>
         </Reveal>
-      </a>
+        <a
+          className="ui card col-6 mx-3 my-0"
+          href="https://aime77.github.io/RPS-Multiplayer/"
+        >
+          <div className="header">RPG Hero Game</div>
+          <a
+            className="GitHubLink"
+            href="https://github.com/aime77/RPS-Multiplayer"
+          >
+            GitHub Link
+          </a>
+        </a>
+      </div>
     </div>
   );
 };

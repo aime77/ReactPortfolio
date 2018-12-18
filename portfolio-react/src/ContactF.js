@@ -6,9 +6,9 @@ const ContactForm = props => {
   return (
     <Form
       id="contact"
-      className="py-3 px-2 mx-2 col-lg-3 col-md-3 col-sm-12 col-sx-12 b-6 border-info"
+      className="py-3 px-2 mx-2 col-lg-2 col-md-2 col-sm-10 col-sx-10 b-6 border-info px-3"
     >
-      <h3 className="mt-3">Contact Me</h3>
+      <h3 className="mt-3 subTitleFont">Contact Me</h3>
       <hr />
       <Form.Group widths="equal">
         <Form.Input
