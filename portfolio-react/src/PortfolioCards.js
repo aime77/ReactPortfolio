@@ -25,6 +25,8 @@ const PortfolioCards = props => {
           >
             GitHub Link
           </a>
+          Face recogniziton app.<br />
+          Technologies: * Javascript * Firebase * Trackui * Materialize
         </a>
       </div>
 
@@ -52,6 +54,8 @@ const PortfolioCards = props => {
           >
             GitHub Link
           </a>
+          App to find a friend based of survey scores.<br />
+          Technologies: * Javascript * Nodejs * Heroku * Mysql
         </a>
       </div>
 
@@ -72,16 +76,18 @@ const PortfolioCards = props => {
           <a className="meta" href="https://github.com/aime77/sequalizedBurger">
             <div className="GitHubLink"> GitHub Link</div>
           </a>
+          POS app to order and cash burgers.<br />
+          Technologies: * Javascript * Sequelize * Nodejs * Heroku
         </a>
       </div>
 
       <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
         <Reveal animated="move right">
           <Reveal.Content visible>
-            <Image src="../images/triviaImage.png" size="medium" />
+            <Image src="../images/triviaImage.png" size="medium" circle />
           </Reveal.Content>
           <Reveal.Content hidden>
-            <Image src="../images/triviaGame.gif" size="medium" />
+            <Image src="../images/triviaGame.gif" size="medium" circle />
           </Reveal.Content>
         </Reveal>
         <a
@@ -92,6 +98,8 @@ const PortfolioCards = props => {
           <a className="GitHubLink" href="https://github.com/aime77/TriviaGame">
             GitHub Link
           </a>
+          App to test you knowledge about the brain!<br />
+          Technologies: * Javascript * CSS * Html 
         </a>
       </div>
 
@@ -106,15 +114,17 @@ const PortfolioCards = props => {
         </Reveal>
         <a
           className="ui card col-6 mx-3 my-0"
-          href="https://aime77.github.io/RPS-Multiplayer/"
+          href="https://github.com/aime77/RPG-Game"
         >
           <div className="header">RPG Hero Game</div>
           <a
             className="GitHubLink"
-            href="https://github.com/aime77/RPS-Multiplayer"
+            href="https://aime77.github.io/RPG-Game/"
           >
             GitHub Link
           </a>
+          Fun RPG dynamic game app!<br />
+          Technologies: * Javascript * JQuery* Html * CSS
         </a>
       </div>
     </div>
