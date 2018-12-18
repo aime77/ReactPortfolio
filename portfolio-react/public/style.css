@@ -332,10 +332,20 @@ input{
       color: #99a478;
     }
   }
+
+  .cardContent{
+    font-family: 'Thasadith', sans-serif;
+    font-size: 1.5rem;
+    color:black;
+  }
   
 .subTitleFont{
   font-family: 'Thasadith', sans-serif;
   font-size: 2.5rem;
+}
+
+ui card{
+  margin: 2px 2px 2px 2px;
 }
   .aboutMeFont{
 

@@ -17,7 +17,7 @@ const PortfolioCards = props => {
           </Reveal>
         </a>
 
-        <a className="ui card col-6 mx-3 my-0">
+        <a className="ui card col-6 mx-3 my-0 px-3 py-3">
           <div className="header">Threat Alert</div>
           <a
             className="GitHubLink"
@@ -25,8 +25,10 @@ const PortfolioCards = props => {
           >
             GitHub Link
           </a>
+          <div className="cardContent">
           Face recogniziton app.<br />
           Technologies: * Javascript * Firebase * Trackui * Materialize
+          </div>
         </a>
       </div>
 
@@ -46,7 +48,7 @@ const PortfolioCards = props => {
           </Reveal>
         </a>
 
-        <a className="ui card col-6 mx-3 my-0">
+        <a className="ui card col-6 mx-3 my-0 px-3 py-3">
           <div className="header">Friend Finder</div>
           <a
             className="GitHubLink"
@@ -54,8 +56,10 @@ const PortfolioCards = props => {
           >
             GitHub Link
           </a>
+          <div className="cardContent">
           App to find a friend based of survey scores.<br />
           Technologies: * Javascript * Nodejs * Heroku * Mysql
+          </div>
         </a>
       </div>
 
@@ -69,15 +73,17 @@ const PortfolioCards = props => {
           </Reveal.Content>
         </Reveal>
         <a
-          className="ui card col-6 mx-3 my-0"
+          className="ui card col-6 mx-3 my-0 px-3 py-3"
           href="https://yum-yum-burger-pos.herokuapp.com/"
         >
           <div className="header">Get a Burger!</div>
           <a className="meta" href="https://github.com/aime77/sequalizedBurger">
             <div className="GitHubLink"> GitHub Link</div>
           </a>
+          <div className="cardContent">
           POS app to order and cash burgers.<br />
           Technologies: * Javascript * Sequelize * Nodejs * Heroku
+          </div>
         </a>
       </div>
 
@@ -91,15 +97,17 @@ const PortfolioCards = props => {
           </Reveal.Content>
         </Reveal>
         <a
-          className="ui card col-6 mx-3 my-0"
+          className="ui card col-6 mx-3 my-0 px-3 py-3"
           href="https://aime77.github.io/TriviaGame/"
         >
           <div className="header">Trivia Game</div>
           <a className="GitHubLink" href="https://github.com/aime77/TriviaGame">
             GitHub Link
           </a>
+          <div className="cardContent">
           App to test you knowledge about the brain!<br />
           Technologies: * Javascript * CSS * Html 
+          </div>
         </a>
       </div>
 
@@ -113,7 +121,7 @@ const PortfolioCards = props => {
           </Reveal.Content>
         </Reveal>
         <a
-          className="ui card col-6 mx-3 my-0"
+          className="ui card col-6 mx-3 my-0 px-3 py-3"
           href="https://github.com/aime77/RPG-Game"
         >
           <div className="header">RPG Hero Game</div>
@@ -123,8 +131,10 @@ const PortfolioCards = props => {
           >
             GitHub Link
           </a>
+          <div className="cardContent">
           Fun RPG dynamic game app!<br />
           Technologies: * Javascript * JQuery* Html * CSS
+          </div>
         </a>
       </div>
     </div>
