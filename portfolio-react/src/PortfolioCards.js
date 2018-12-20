@@ -1,5 +1,4 @@
 import React from "react";
-import { Form } from "semantic-ui-react";
 import { Image, Reveal } from "semantic-ui-react";
 
 const PortfolioCards = props => {
@@ -9,15 +8,15 @@ const PortfolioCards = props => {
         <a href="https://nyramirez.github.io/Threat-Alert-P1/">
           <Reveal animated="move right">
             <Reveal.Content visible>
-              <Image src="../images/project1.png" size="medium" />
+              <Image src="../images/project1.png" size="medium" circular/>
             </Reveal.Content>
             <Reveal.Content hidden>
-              <Image src="../images/threatAlert.gif" size="medium" />
+              <Image src="../images/threatAlert.gif" size="medium" circular/>
             </Reveal.Content>
           </Reveal>
         </a>
 
-        <a className="ui card col-6 mx-3 my-0 px-3 py-3">
+        <div className="ui card col-6 mx-3 my-0 px-3 py-3">
           <div className="header">Threat Alert</div>
           <a
             className="GitHubLink"
@@ -26,29 +25,30 @@ const PortfolioCards = props => {
             GitHub Link
           </a>
           <div className="cardContent">
-          Face recogniziton app.<br />
-          Technologies: * Javascript * Firebase * Trackui * Materialize
+            Face recogniziton app.
+            <br />
+            Technologies: * Javascript * Firebase * Trackui * Materialize
           </div>
-        </a>
+        </div>
       </div>
 
       <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
         <a href="https://find-friends-4-ever.herokuapp.com/">
           <Reveal animated="move">
             <Reveal.Content visible>
-              <Image src="../images/friendFinder.png" size="medium" />
+              <Image src="../images/friendFinder.png" size="medium" circular/>
             </Reveal.Content>
             <Reveal.Content hidden>
               <Image
                 className="hiddenGif"
                 src="../images/friendFinder.gif"
                 size="medium"
-              />
+                circular/>
             </Reveal.Content>
           </Reveal>
         </a>
 
-        <a className="ui card col-6 mx-3 my-0 px-3 py-3">
+        <div className="ui card col-6 mx-3 my-0 px-3 py-3">
           <div className="header">Friend Finder</div>
           <a
             className="GitHubLink"
@@ -57,22 +57,23 @@ const PortfolioCards = props => {
             GitHub Link
           </a>
           <div className="cardContent">
-          App to find a friend based of survey scores.<br />
-          Technologies: * Javascript * Nodejs * Heroku * Mysql
+            App to find a friend based of survey scores.
+            <br />
+            Technologies: * Javascript * Nodejs * Heroku * Mysql
           </div>
-        </a>
+        </div>
       </div>
 
       <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
         <Reveal animated="move">
           <Reveal.Content visible>
-            <Image src="../images/getBurger.png" size="medium" />
+            <Image src="../images/getBurger.png" size="medium" circular/>
           </Reveal.Content>
           <Reveal.Content hidden>
-            <Image src="../images/burger.gif" size="medium" />
+            <Image src="../images/burger.gif" size="medium" circular/>
           </Reveal.Content>
         </Reveal>
-        <a
+        <div
           className="ui card col-6 mx-3 my-0 px-3 py-3"
           href="https://yum-yum-burger-pos.herokuapp.com/"
         >
@@ -81,22 +82,23 @@ const PortfolioCards = props => {
             <div className="GitHubLink"> GitHub Link</div>
           </a>
           <div className="cardContent">
-          POS app to order and cash burgers.<br />
-          Technologies: * Javascript * Sequelize * Nodejs * Heroku
+            POS app to order and cash burgers.
+            <br />
+            Technologies: * Javascript * Sequelize * Nodejs * Heroku
           </div>
-        </a>
+        </div>
       </div>
 
       <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
         <Reveal animated="move right">
           <Reveal.Content visible>
-            <Image src="../images/triviaImage.png" size="medium" circle />
+            <Image src="../images/triviaImage.png" size="medium" circular/>
           </Reveal.Content>
           <Reveal.Content hidden>
-            <Image src="../images/triviaGame.gif" size="medium" circle />
+            <Image src="../images/triviaGame.gif" size="medium" circular/>
           </Reveal.Content>
         </Reveal>
-        <a
+        <div
           className="ui card col-6 mx-3 my-0 px-3 py-3"
           href="https://aime77.github.io/TriviaGame/"
         >
@@ -105,37 +107,36 @@ const PortfolioCards = props => {
             GitHub Link
           </a>
           <div className="cardContent">
-          App to test you knowledge about the brain!<br />
-          Technologies: * Javascript * CSS * Html 
+            App to test you knowledge about the brain!
+            <br />
+            Technologies: * Javascript * CSS * Html
           </div>
-        </a>
+        </div>
       </div>
 
       <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
         <Reveal animated="move right">
           <Reveal.Content visible>
-            <Image src="../images/RPG.png" size="medium" />
+            <Image src="../images/RPG.png" size="medium" circular/>
           </Reveal.Content>
           <Reveal.Content hidden>
-            <Image src="../images/RPG.gif" size="medium" />
+            <Image src="../images/RPG.gif" size="medium" circular/>
           </Reveal.Content>
         </Reveal>
-        <a
+        <div
           className="ui card col-6 mx-3 my-0 px-3 py-3"
           href="https://github.com/aime77/RPG-Game"
         >
           <div className="header">RPG Hero Game</div>
-          <a
-            className="GitHubLink"
-            href="https://aime77.github.io/RPG-Game/"
-          >
+          <a className="GitHubLink" href="https://aime77.github.io/RPG-Game/">
             GitHub Link
           </a>
           <div className="cardContent">
-          Fun RPG dynamic game app!<br />
-          Technologies: * Javascript * JQuery* Html * CSS
+            Fun RPG dynamic game app!
+            <br />
+            Technologies: * Javascript * JQuery* Html * CSS
           </div>
-        </a>
+        </div>
       </div>
     </div>
   );

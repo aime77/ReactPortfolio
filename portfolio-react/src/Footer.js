@@ -12,11 +12,11 @@ const Navbar = props => {
         <h4 className="ui inverted header">
           &copy; Copyright 2019 | All rights reserved | Aime
         </h4>
-        <a href="https://github.com/aime77" target="_blank">
+        <a href="https://github.com/aime77">
           <i className="fa fa-github icon big fa-fw" />
         </a>
         &nbsp; Github
-        <a href="https://www.linkedin.com/" target="_blank">
+        <a href="https://www.linkedin.com/">
           <i className="linkedin square icon big" />
         </a>
         &nbsp; LinkedIn

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Animated } from "react-animated-css";
+
 const AboutMe = props => {
   return (
     <div className="col-lg-12 col-md-12 col-sm-12 col-sx-12">
@@ -13,16 +15,22 @@ const AboutMe = props => {
               style={{ listStyleType: "disc" }}
             >
               About me:
-              <li className="aboutMeFont" type="square">
+              <li className="aboutMeFont">
                 Full-stack Developer
               </li>
-              <li className="aboutMeFont" type="square">
-                Active science researcher
-              </li>
-              <li className="aboutMeFont" type="square">
+              <Animated
+                animationIn="bounceInLeft"
+                animationOut="fadeOut"
+                isVisible={true}
+              >
+                <li className="aboutMeFont">
+                  Active science researcher
+                </li>
+              </Animated>
+              <li className="aboutMeFont">
                 Health and fitness advocate
               </li>
-              <li className="aboutMeFont" type="square">
+              <li className="aboutMeFont">
                 Passionate about brain science{" "}
               </li>
               And one statement:

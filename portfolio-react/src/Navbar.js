@@ -2,19 +2,27 @@ import React from "react";
 
 const Navbar = props => {
   return (
-    <header class="cd-main-header">
-      <nav class="cd-main-nav js-main-nav">
-        <ul class="cd-main-nav__list">
+    <header className="cd-main-header">
+      <nav className="cd-main-nav js-main-nav">
+        <ul className="cd-main-nav__list">
           <li>
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Projects</a>
           </li>
 
           <li>
             <a href="#contact">Contact</a>
           </li>
+          <li>
+            <a href="#contact">Explore</a>
+          </li>
+          <li>
+           
+          <i class="angle double down icon"></i>
+
+            </li>
         </ul>
       </nav>
     </header>
