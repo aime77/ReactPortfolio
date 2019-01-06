@@ -8,10 +8,10 @@ const PortfolioCards = props => {
         <a href="https://nyramirez.github.io/Threat-Alert-P1/">
           <Reveal animated="move right">
             <Reveal.Content visible>
-              <Image src="../images/project1.png" size="medium" circular/>
+              <Image className="imgBox" src="../images/project1.png" size="medium" circular/>
             </Reveal.Content>
             <Reveal.Content hidden>
-              <Image src="../images/threatAlert.gif" size="medium" circular/>
+              <Image className="imgBox" src="../images/threatAlert.gif" size="medium" circular/>
             </Reveal.Content>
           </Reveal>
         </a>
@@ -36,11 +36,11 @@ const PortfolioCards = props => {
         <a href="https://find-friends-4-ever.herokuapp.com/">
           <Reveal animated="move">
             <Reveal.Content visible>
-              <Image src="../images/friendFinder.png" size="medium" circular/>
+              <Image className="imgBox" src="../images/friendFinder.png" size="medium" circular/>
             </Reveal.Content>
             <Reveal.Content hidden>
               <Image
-                className="hiddenGif"
+              className="imgBox"
                 src="../images/friendFinder.gif"
                 size="medium"
                 circular/>
@@ -65,12 +65,12 @@ const PortfolioCards = props => {
       </div>
 
       <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
-        <Reveal animated="move">
+        <Reveal animated="move" className="imgCard p-6">
           <Reveal.Content visible>
-            <Image src="../images/getBurger.png" size="medium" circular/>
+            <Image className="imgBox" src="../images/getBurger.png" size="medium" circular/>
           </Reveal.Content>
           <Reveal.Content hidden>
-            <Image src="../images/burger.gif" size="medium" circular/>
+            <Image className="imgBox" src="../images/burger.gif" size="medium" circular/>
           </Reveal.Content>
         </Reveal>
         <div
@@ -92,10 +92,10 @@ const PortfolioCards = props => {
       <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
         <Reveal animated="move right">
           <Reveal.Content visible>
-            <Image src="../images/triviaImage.png" size="medium" circular/>
+            <Image className="imgBox" src="../images/triviaImage.png" size="medium" circular/>
           </Reveal.Content>
           <Reveal.Content hidden>
-            <Image src="../images/triviaGame.gif" size="medium" circular/>
+            <Image className="imgBox" src="../images/triviaGame.gif" size="medium" circular/>
           </Reveal.Content>
         </Reveal>
         <div
@@ -115,12 +115,12 @@ const PortfolioCards = props => {
       </div>
 
       <div className="col-lg-12 col-md-12 col-sm-12 my-5 row">
-        <Reveal animated="move right">
+        <Reveal animated="move left">
           <Reveal.Content visible>
-            <Image src="../images/RPG.png" size="medium" circular/>
+            <Image className="imgBox" src="../images/RPG.png" size="medium" circular/>
           </Reveal.Content>
           <Reveal.Content hidden>
-            <Image src="../images/RPG.gif" size="medium" circular/>
+            <Image className="imgBox" src="../images/RPG.gif" size="medium" circular/>
           </Reveal.Content>
         </Reveal>
         <div

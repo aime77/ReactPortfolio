@@ -10,7 +10,6 @@ import Footer from "./Footer";
 import "semantic-ui-css/semantic.min.css";
 
 const App = () => {
-
   return (
     
     <div>

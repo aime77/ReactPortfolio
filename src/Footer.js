@@ -13,17 +13,18 @@ const Navbar = props => {
           &copy; Copyright 2019 | All rights reserved | Aime
         </h4>
         <a href="https://github.com/aime77">
-          <i className="fa fa-github icon big fa-fw" />
+        
+        <i className="github icon big"></i>
         </a>
-        &nbsp; Github
+        Github&nbsp;  
         <a href="https://www.linkedin.com/">
           <i className="linkedin square icon big" />
         </a>
-        &nbsp; LinkedIn
+        LinkedIn&nbsp; 
         <a href="mailto:aime.urquieta@outlook.com">
-          <i className="fa fa-envelope icon big fa-fw" />
+        <i className="envelope icon big"></i>
         </a>
-        &nbsp; E-Mail
+        E-Mail&nbsp; 
       </div>
     </div>
   );

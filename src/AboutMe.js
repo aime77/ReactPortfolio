@@ -12,7 +12,6 @@ const AboutMe = props => {
             <p className="mx-auto aboutMeFont">My name is Aime</p>
             <ul
               className="mx-auto aboutMeFont"
-              style={{ listStyleType: "disc" }}
             >
               About me:
               <li className="aboutMeFont">
@@ -34,7 +33,7 @@ const AboutMe = props => {
                 Passionate about brain science{" "}
               </li>
               And one statement:
-              <li className="aboutMeFont" type="square">
+              <li className="aboutMeFont">
                 I LOVE TO LEARN!
               </li>
             </ul>
