@@ -1,32 +1,49 @@
-import React from "react";
+import React, { Component } from "react";
+import { Menu, Segment, Icon } from "semantic-ui-react";
 
-const Navbar = props => {
-  return (
-    <header className="cd-main-header">
-      <nav className="cd-main-nav js-main-nav">
-        <ul className="cd-main-nav__list">
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#portfolio">Projects</a>
-          </li>
+class Navbar extends Component {
+  state = { showNavBarOptions: false };
+  state = { activeItem: "home" };
 
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="#contact">Explore</a>
-          </li>
-          <li>
-           
-          <i class="angle double down icon"></i>
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
-            </li>
-        </ul>
-      </nav>
-    </header>
-  );
-};
+  showOptions = () => {
+    this.setState({ showNavBarOptions: true });
+  };
+
+  render() {
+    const { activeItem } = this.state;
+
+    return (
+   
+        <Menu>
+          <Menu.Menu position="right">
+            <div style={{ opacity: this.state.showNavBarOptions ? 1 : 0 }}>
+            <Menu pointing secondary>
+              <Menu.Item
+                name="Home"
+                active={activeItem === "Home"}
+                onClick={this.handleItemClick}
+              />
+              <Menu.Item
+                name="Projects"
+                active={activeItem === "Projects"}
+                onClick={this.handleItemClick}
+              />
+              <Menu.Item
+                name="Contact"
+                active={activeItem === "Contact"}
+                onClick={this.handleItemClick}
+              />
+              </Menu>
+            </div>
+            <Menu.Item name="Explore" onMouseEnter={this.showOptions}>
+            <Icon disabled name="arrow alternate circle left outline" /> Explore
+            </Menu.Item>
+          </Menu.Menu>
+          </Menu>
+    
+    );
+  }
+}
 export default Navbar;
-

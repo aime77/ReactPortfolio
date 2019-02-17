@@ -1,0 +1,118 @@
+#pnav a:hover {
+  background-position: 0px -200px;
+}
+
+a {
+  color: #111;
+}
+
+
+#contact {
+  -webkit-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: lightgreen;
+  margin: 7em 7em 5em 5em;
+  padding-left: 5em;
+}
+
+
+.ml3 {
+  font-weight: 700;
+  font-size: 3.5em;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+#home {
+  padding: 350px;
+  height: 800px;
+}
+
+
+#picture {
+  width: 12rem;
+  margin-left: 150px;
+}
+
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #3d3536;
+  background-color: white;
+}
+
+
+
+
+
+
+.cardContent {
+  font-family: "Thasadith", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.subTitleFont {
+  font-family: "Thasadith", sans-serif;
+  font-size: 2.5rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.aboutMeFont {
+  color: #d9d9d9;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.84);
+    color: #d9d9d9;
+  }
+
+  .imgBox{
+    -webkit-box-shadow: inset -1px 0px 3px 5px rgba(51, 50, 50, 1);
+    -moz-box-shadow:    inset -1px 0px 3px 5px rgba(51, 50, 50, 1);
+    box-shadow:         inset -1px 0px 3px 5px rgba(51, 50, 50, 1);
+  }
+.cd-fixed-bg {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+
+
+.cd-scrolling-bg.cd-scrolling-bg--color-1 {
+  background-color: #3d3536;
+  color: #a6989a;
+}
+
+.cd-scrolling-bg.cd-scrolling-bg--color-2 {
+  background-color: #99a478;
+  color: #3d3536;
+}
+
+.cd-scrolling-bg.cd-scrolling-bg--color-3 {
+  background-color: #b4d7a8;
+  color: #3d3536;
+}
+
+.cd-scrolling-bg__content {
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-scrolling-bg {
+    padding: 8em 0;
+    font-size: 2rem;
+    line-height: 2;
+    font-weight: 300;
+  }
+}
