@@ -6,9 +6,14 @@ import ImageChange from "./Image";
 import healthPresent from "./Images/healthpresent.jpg";
 import AI_Brain from "./Images/AI_Brain.jpg";
 import Picture_au2 from "./Images/Picture_au2.png";
+import d3 from "./Images/d3.jpg";
+import plotly from "./Images/plotly.png";
+import python from "./Images/python.jpg";
+import tensorflow from "./Images/tensorflow.png";
 import book from "./Images/book.jpg";
 import bootcamp from "./Images/bootcamp.png";
 import uh from "./Images/uh.png";
+import SoftwareCards from "./SoftwareCards";
 
 class AboutMe extends Component {
   state = { pictureOptions: null };
@@ -59,22 +64,14 @@ class AboutMe extends Component {
           </Card>
         );
 
+      case 7:
+        return <FullStackDev_Cards />;
+
       case 5:
-        return (
-          <Card color="green" centered>
-            <ImageChange
-              src={AI_Brain}
-              size="massive"
-              href="https://www.tacc.utexas.edu/-/scientists-enlist-supercomputers-machine-learning-to-automatically-identify-brain-tumors"
-            />
-            <Card.Header style={{ textAlign: "center", fontSize: "1.5rem" }}>
-              Article which sparked my interest in machine learning
-            </Card.Header>
-          </Card>
-        );
+        return <SoftwareCards img1={d3} img2={plotly} />;
 
       case 6:
-        return <FullStackDev_Cards />;
+        return <SoftwareCards img1={tensorflow} img2={python} />;
 
       default:
         return <ImageChange src={Picture_au2} size="medium" />;
@@ -122,12 +119,18 @@ class AboutMe extends Component {
                   className="aboutMeFont"
                   onMouseEnter={() => this.setState({ pictureOptions: 5 })}
                 >
+                  Data Visualization
+                </li>
+                <li
+                  className="aboutMeFont"
+                  onMouseEnter={() => this.setState({ pictureOptions: 6 })}
+                >
                   Machine learning
                 </li>
                 <span style={{ color: "grey" }}>And one statement:</span>
                 <li
                   className="aboutMeFont"
-                  onMouseEnter={() => this.setState({ pictureOptions: 6 })}
+                  onMouseEnter={() => this.setState({ pictureOptions: 7 })}
                 >
                   I LOVE TO LEARN AND UTILIZE WHAT I LEARN TO INOVATE.
                 </li>
