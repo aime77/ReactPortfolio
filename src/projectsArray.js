@@ -23,7 +23,7 @@ export default [
   },
   {
     name: "Threat Alert",
-    description: "A system with an employee clock-in face recognition feature which assesses emotional attributes, and alerts manager if statistical scores of anger and sadness are too low. The manager can then send the employee a survey and revise the score.",
+    description: "A system with an employee clock-in face recognition feature which assesses emotional attributes, and alerts manager if statistical scores of anger and sadness are too low.",
     github: "https://github.com/nyramirez/Threat-Alert-P1",
     image: imgThreatAlert,
     technologies:"Tracking, Firebase, Face++ API, BlockUI Plugin, JQuery, Bootstrap ",
@@ -35,65 +35,55 @@ export default [
     description: "App to search, view and save Google books.",
     github: "https://github.com/aime77/google-books-search",
     image: imgGoogleBookSearch,
-    technologies:"",
+    technologies:"React, Google Books API, Express, Node",
     link: "https://search-google-books-and-save.herokuapp.com/",
     category: "main"
   },
   {
     name: "Clicky Game",
-    description: "Memory game app which allows user to select theme.",
+    description: "Memory game app which allows user to select theme of pictures.",
     github: "https://github.com/aime77/clickyGame",
     image: imgClickyGame,
-    technologies:"React, Usplash API",
+    technologies:"React, Usplash API, Sementic UI",
     link: "https://github.com/aime77/clickyGame",
-    category: "Mmin"
+    category: "main"
   },
   {
     name: "Medium Scraper",
-    description: "App to save, viow and take notes on your favorite Medium technology related articles.",
+    description: "App to save, view and take notes of your favorite Medium technology related articles.",
     github: "https://github.com/aime77/clickyGame",
     image: imgMediumScraper,
-    technologies:"",
+    technologies:"Axios, Handlebars, Express, Node",
     link: "https://medium-scraper-and-note-taker.herokuapp.com/",
     category: "main"
   },
   {
     name: "POS Burger System",
-    description: "POS system to take and cash orders, and review custers' history.",
+    description: "POS system to take and cash orders, and review customers' history.",
     github: "https://github.com/aime77/sequalizedBurger",
     image: imgPOSBurger,
-    technologies:"",
+    technologies:"MySQL, Sequalize, Handlebars, Express, Node ",
     link: "https://yum-yum-burger-pos.herokuapp.com/",
     category: "main"
   },
   {
     name: "Devour a Burger",
-    description: "athleticType",
+    description: "Fun app to enter burger of choice and see the list of the ones user devours.",
     github: "https://github.com/aime77/burger",
     image: imgDevourBurger,
-    technologies:"",
+    technologies:"MySQL, Handlebars, Express, Node",
     link: "https://burger-yum-yum.herokuapp.com/",
-    category: "Otoer"
+    category: "other"
   },
   {
     name: "Friend Finder",
     description: "Upon survey completion, app matches user to a friend.",
     github: "https://github.com/aime77/FriendFinder",
     image: imgFriendFinder,
-    technologies:"Express, Node, Heroku, JawsDB, MySQL, JQuery Modals",
+    technologies:"MySQL, JQuery Modals,JawsDB, Express, Node",
     link: "https://find-friends-4-ever.herokuapp.com/",
     category: "main"
   },
-//   
-//   {
-//     name: "Train Scheduler",
-//     description: "Train scheduler and time departure and arrival tracker.",
-//     github: "https://github.com/aime77/TrainScheduler",
-//     image: imgTrainScheduler,
-//     technologies:"JavaScript, Firebase",
-//     link: "https://aime77.github.io/TrainScheduler/",
-//     category: "main"
-//   },
 
   {
     name: "GIF Search",
