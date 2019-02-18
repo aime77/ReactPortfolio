@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Projects from "./Projects";
 import AboutMe from "./AboutMe";
-import Navbar from "./Navbar";
 import ContactForm from "./ContactF";
 import { Icon, Container, Grid, Card } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";

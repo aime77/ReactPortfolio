@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Menu, Segment, Icon } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import { Menu, Icon } from "semantic-ui-react";
+
 
 class Navbar extends Component {
   state = { showNavBarOptions: false };

@@ -9,7 +9,7 @@ import imgFriendFinder from "./projectImages/friendFinder.png"
 import imgGIFSearch from "./projectImages/threatAlert.png"
 import imgTriviaGame from "./projectImages/triviaImage.png"
 import imgRPG_Game from "./projectImages/RPG.png"
-import imgTrainScheduler from "./projectImages/trainScheduler.png"
+
 
 export default [
   {
