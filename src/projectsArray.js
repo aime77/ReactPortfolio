@@ -6,7 +6,7 @@ import imgMediumScraper from "./projectImages/mediumScraper.png"
 import imgPOSBurger from "./projectImages/getBurger.png"
 import imgDevourBurger from "./projectImages/devourBurger.png"
 import imgFriendFinder from "./projectImages/friendFinder.png"
-import imgGIFSearch from "./projectImages/threatAlert.png"
+import imgGIFSearch from "./projectImages/gifSearch.png"
 import imgTriviaGame from "./projectImages/triviaImage.png"
 import imgRPG_Game from "./projectImages/RPG.png"
 

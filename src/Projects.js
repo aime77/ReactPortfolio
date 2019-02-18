@@ -73,6 +73,10 @@ class Projects extends Component {
   render() {
     return (
       <div>
+        <h1 className="mt-3 subTitleFont" style={{ textAlign: "center" }}>
+          Projects
+        </h1>
+        <hr />
         {this.renderButtons()}
 
         {this.renderFields()}

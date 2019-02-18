@@ -46,10 +46,8 @@ body {
 }
 
 .navBarFont{
-
     font-family: "Thasadith", sans-serif;
     font-size: 1.5rem;
- 
 }
 
 ul{
@@ -69,6 +67,7 @@ ul{
     box-shadow:         inset -1px 0px 3px 5px rgba(51, 50, 50, 1);
   }
 .cd-fixed-bg {
+  overflow: hidden;
   position: relative;
   min-height: 100vh;
   background-size: cover;

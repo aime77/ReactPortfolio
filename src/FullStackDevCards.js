@@ -5,7 +5,7 @@ import FSWeb_2 from "./Images/process_FWS_2.jpg";
 import FSWeb_3 from "./Images/process_FSW_3.jpg";
 import FSWeb_4 from "./Images/process_FSW_4.jpg";
 
-const FullStackDev_Cards = () => (
+const FullStackDevCards = () => (
   <Card.Group itemsPerRow={4}>
     <Card color="red">
     <Image src={FSWeb_1} size="massive"/>
@@ -35,4 +35,4 @@ const FullStackDev_Cards = () => (
   </Card.Group>
 );
 
-export default FullStackDev_Cards;
+export default FullStackDevCards;

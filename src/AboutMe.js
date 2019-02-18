@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Container, Grid, Card } from "semantic-ui-react";
 import AnimatedIntro from "./AnimatedIntro";
-import FullStackDev_Cards from "./FullStackDev_Cards";
+import FullStackDevCards from "./FullStackDevCards";
 import ImageChange from "./Image";
 import healthPresent from "./Images/healthpresent.jpg";
-import AI_Brain from "./Images/AI_Brain.jpg";
 import Picture_au2 from "./Images/Picture_au2.png";
 import d3 from "./Images/d3.jpg";
 import plotly from "./Images/plotly.png";
@@ -65,7 +64,7 @@ class AboutMe extends Component {
         );
 
       case 7:
-        return <FullStackDev_Cards />;
+        return <FullStackDevCards />;
 
       case 5:
         return <SoftwareCards img1={d3} img2={plotly} />;
