@@ -3,8 +3,8 @@ import "./style.css";
 import TextyAnim from "rc-texty/lib";
 import "rc-texty/assets/index.css";
 
-const text1 = `Hello.\n My name is Aime.`;
-
+const text1 = `Hello.`;
+const text2 = `My name is Aime.`;
 export default class AnimatedIntro extends Component {
   getEnter = e => {
     switch (e.index) {
@@ -81,16 +81,24 @@ export default class AnimatedIntro extends Component {
   };
   render() {
     return (
-      
-          <TextyAnim
-          className="aboutMeFont"
-            style={{ fontSize: "2rem", textAlign:"center" }}
-            enter={this.getEnter}
-            leave={this.getEnter}
-          >
-            {text1}
-          </TextyAnim>
-       
+        <div>
+      <TextyAnim
+        className="aboutMeFont"
+        style={{ fontSize: "2rem" }}
+        enter={this.getEnter}
+        leave={this.getEnter}
+      >
+        {text1}
+      </TextyAnim>
+       <TextyAnim
+       className="aboutMeFont"
+       style={{ fontSize: "2rem" }}
+       enter={this.getEnter}
+       leave={this.getEnter}
+     >
+       {text2}
+     </TextyAnim>
+     </div>
     );
   }
 }

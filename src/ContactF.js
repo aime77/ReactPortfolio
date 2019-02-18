@@ -7,7 +7,7 @@ const ContactForm = props => {
       id="contact"
       className="py-3 px-2 mx-2 col-lg-2 col-md-2 col-sm-10 col-sx-10 b-6 border-info px-3"
     >
-    <h1> Contact Me</h1>
+    <h1 className="subTitleFont" style={{textAligh:"center"}}> Contact Me</h1>
       <h3 className="mt-3 subTitleFont">
       <List>
     <List.Item>

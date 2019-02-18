@@ -1,26 +1,32 @@
 import React, { Component } from "react";
 import _ from "lodash";
-import { Image, Reveal, Icon } from "semantic-ui-react";
+import { Image, Reveal, Icon, Card } from "semantic-ui-react";
 import projectsArray from "./projectsArray";
-
+import bg from "./Images/bg_black.jpg" 
 class Projects extends Component {
+
+   
   renderFields() {
     return _.map(
       projectsArray,
       ({ name, description, github, link, image, technologies, category }) => {
         return (
-         
-            <Reveal animated="move" key={name}>
-              <Reveal.Content visible><Image src={image} href={link} size="large" />
-               
+            
+            <Reveal animated="move" key={name} style={{marginTop: "3%"}} instant>
+              <Reveal.Content visible><Image src={image}  size="medium" />          
               </Reveal.Content>
-              <Reveal.Content hidden>
-                 <h2> {name}</h2>
+              <Reveal.Content hidden size="medium">
+              <Image href={link}  target="_blank" style={{ backgroundImage: `url(${bg})`}}>
+              <div style={{color:"white"}} href={link}  target="_blank">
+                 <h2 > {name}</h2>
                 <p>{description}</p>
                 <p>{technologies}</p>
+                </div>
                 <Icon name="github" />
+                </Image>
               </Reveal.Content>
             </Reveal>
+           
          
         );
       }
@@ -28,7 +34,6 @@ class Projects extends Component {
   }
 
   render() {
-
 
     return <div>{this.renderFields()}</div>;
   }

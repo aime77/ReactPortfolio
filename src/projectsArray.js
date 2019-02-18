@@ -14,25 +14,25 @@ import imgTrainScheduler from "./projectImages/trainScheduler.png"
 export default [
   {
     name: "Posture Check",
-    description: "description",
+    description: "A sophisticated posture game which tracks body points while the user performs YouTube video stretches.",
     github: "https://github.com/aime77/postureCheck",
     link: "https://posture-check.herokuapp.com/",
     image: imgPostureCheck,
-    technologies:"",
+    technologies:"TensorFlow, React, Redux, D3, Mongoose, Node, Express, YouTube API, Google OAuth",
     category: "main"
   },
   {
     name: "Threat Alert",
-    description: "profilePicture",
+    description: "A system with an employee clock-in face recognition feature which assesses emotional attributes, and alerts manager if statistical scores of anger and sadness are too low. The manager can then send the employee a survey and revise the score.",
     github: "https://github.com/nyramirez/Threat-Alert-P1",
     image: imgThreatAlert,
-    technologies:"",
+    technologies:"Tracking, Firebase, Face++ API, BlockUI Plugin, JQuery, Bootstrap ",
     link: "https://nyramirez.github.io/Threat-Alert-P1/",
     category: "main"
   },
   {
     name: "Google Search Book",
-    description: "App to search, view and save Google books",
+    description: "App to search, view and save Google books.",
     github: "https://github.com/aime77/google-books-search",
     image: imgGoogleBookSearch,
     technologies:"",
@@ -41,7 +41,7 @@ export default [
   },
   {
     name: "Clicky Game",
-    description: "Memory game app which allows user to select theme",
+    description: "Memory game app which allows user to select theme.",
     github: "https://github.com/aime77/clickyGame",
     image: imgClickyGame,
     technologies:"React, Usplash API",
@@ -50,7 +50,7 @@ export default [
   },
   {
     name: "Medium Scraper",
-    description: "zipcode",
+    description: "App to save, viow and take notes on your favorite Medium technology related articles.",
     github: "https://github.com/aime77/clickyGame",
     image: imgMediumScraper,
     technologies:"",
@@ -59,7 +59,7 @@ export default [
   },
   {
     name: "POS Burger System",
-    description: "athleticType",
+    description: "POS system to take and cash orders, and review custers' history.",
     github: "https://github.com/aime77/sequalizedBurger",
     image: imgPOSBurger,
     technologies:"",
@@ -77,26 +77,27 @@ export default [
   },
   {
     name: "Friend Finder",
-    description: "Upon survey completion, app matches user with a friend",
+    description: "Upon survey completion, app matches user to a friend.",
     github: "https://github.com/aime77/FriendFinder",
     image: imgFriendFinder,
     technologies:"Express, Node, Heroku, JawsDB, MySQL, JQuery Modals",
     link: "https://find-friends-4-ever.herokuapp.com/",
     category: "main"
   },
-  {
-    name: "Train Scheduler",
-    description: "Train scheduler and time tracker",
-    github: "https://github.com/aime77/TrainScheduler",
-    image: imgTrainScheduler,
-    technologies:"JavaScript, Firebase",
-    link: "https://aime77.github.io/TrainScheduler/",
-    category: "main"
-  },
+//   
+//   {
+//     name: "Train Scheduler",
+//     description: "Train scheduler and time departure and arrival tracker.",
+//     github: "https://github.com/aime77/TrainScheduler",
+//     image: imgTrainScheduler,
+//     technologies:"JavaScript, Firebase",
+//     link: "https://aime77.github.io/TrainScheduler/",
+//     category: "main"
+//   },
 
   {
     name: "GIF Search",
-    description: "Health related GIF searcher",
+    description: "Health related GIF searcher.",
     github: "https://github.com/aime77/GifTastic",
     image: imgGIFSearch,
     technologies:"GIF API, JavaScript, CSS, HTML",
@@ -105,7 +106,7 @@ export default [
   },
   {
     name: "Trivia Game",
-    description: "Game to test your knowledge about the brain",
+    description: "Game to test your knowledge about the brain.",
     github: "https://github.com/aime77/TriviaGame",
     image: imgTriviaGame,
     technologies:"CSS, JavaScript, JQuery, Bootstrap",
@@ -115,7 +116,7 @@ export default [
 
   {
     name: "Superhero RPG Game",
-    description: "Dynamic game to battle against heroes",
+    description: "Dynamic game to battle against heroes.",
     github: "https://github.com/aime77/RPG-Game",
     image: imgRPG_Game,
     technologies:"JavaScript, CSS, HTML, JQuery, Bootsrap",

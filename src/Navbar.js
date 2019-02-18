@@ -15,33 +15,38 @@ class Navbar extends Component {
     const { activeItem } = this.state;
 
     return (
-   
-        <Menu>
-          <Menu.Menu position="right">
+   <div className="ui top fixed right menu">
+        <Menu pointing secondary info className="right menu">
+          <Menu.Menu >
             <div style={{ opacity: this.state.showNavBarOptions ? 1 : 0 }}>
             <Menu pointing secondary>
               <Menu.Item
                 name="Home"
                 active={activeItem === "Home"}
                 onClick={this.handleItemClick}
+                className="navBarFont"
               />
               <Menu.Item
                 name="Projects"
                 active={activeItem === "Projects"}
                 onClick={this.handleItemClick}
+                href="#portfolio"
+                className="navBarFont"
               />
               <Menu.Item
                 name="Contact"
                 active={activeItem === "Contact"}
                 onClick={this.handleItemClick}
+                className="navBarFont"
               />
               </Menu>
             </div>
-            <Menu.Item name="Explore" onMouseEnter={this.showOptions}>
+            <Menu.Item name="Explore" onMouseEnter={this.showOptions}  className="navBarFont">
             <Icon disabled name="arrow alternate circle left outline" /> Explore
             </Menu.Item>
           </Menu.Menu>
           </Menu>
+          </div>
     
     );
   }

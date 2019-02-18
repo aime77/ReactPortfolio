@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import PortfolioCards from "./PortfolioCards";
 import Projects from "./Projects";
 import AboutMe from "./AboutMe";
 import Navbar from "./Navbar";
-import Navbar2 from "./NavBar2";
 import ContactForm from "./ContactF";
-import { Icon } from "semantic-ui-react";
+import { Icon, Container, Grid, Card } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
 class MainContainer extends Component {
@@ -35,7 +33,11 @@ class MainContainer extends Component {
                 </Icon>
               </div> */}
               <hr />
+              <Container>
+              <Card.Group centered itemsPerRow={2} >
               <Projects />
+              </Card.Group>
+              </Container>
             </div>
           </div>
       

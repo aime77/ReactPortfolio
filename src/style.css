@@ -1,7 +1,3 @@
-#pnav a:hover {
-  background-position: 0px -200px;
-}
-
 a {
   color: #111;
 }
@@ -41,13 +37,7 @@ body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   color: #3d3536;
-  background-color: white;
 }
-
-
-
-
-
 
 .cardContent {
   font-family: "Thasadith", sans-serif;
@@ -58,6 +48,13 @@ body {
 .subTitleFont {
   font-family: "Thasadith", sans-serif;
   font-size: 2.5rem;
+}
+
+.navBarFont{
+
+    font-family: "Thasadith", sans-serif;
+    font-size: 1.5rem;
+ 
 }
 
 ul{
@@ -110,7 +107,7 @@ ul{
 
 @media only screen and (min-width: 768px) {
   .cd-scrolling-bg {
-    padding: 8em 0;
+    padding: 5em 0;
     font-size: 2rem;
     line-height: 2;
     font-weight: 300;
