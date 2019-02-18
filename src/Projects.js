@@ -48,18 +48,21 @@ class Projects extends Component {
                   <Image src={image} size="medium" />
                 </Segment>
               </Reveal.Content>
-              <Reveal.Content hidden size="medium" href={link} target="_blank">
+              <Reveal.Content hidden size="large"  >
                 <Segment
-                  style={{ backgroundImage: `url(${bg})`, padding: "3%" }}
+                  style={{ backgroundImage: `url(${bg})`, padding: "3%", height:"100%" }}
                 >
                   <div style={{ color: "white" }}>
                     <h2 style={{ textAlign: "center" }}> {name}</h2>
                     <p>{description}</p>
                     <p>{technologies}</p>
 
-                    <a href={github} target="_blank">
+                    <Button href={github} target="_blank" >
                       GitHub
-                    </a>
+                    </Button>
+                    <Button href={link} target="_blank">
+                      View Site
+                    </Button>
                   </div>
                 </Segment>
               </Reveal.Content>

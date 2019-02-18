@@ -3,7 +3,7 @@ import Projects from "./Projects";
 import AboutMe from "./AboutMe";
 import Navbar from "./Navbar";
 import ContactForm from "./ContactF";
-import { Container, Card } from "semantic-ui-react";
+import { Container, Card , Segment} from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
 class MainContainer extends Component {
@@ -12,7 +12,9 @@ class MainContainer extends Component {
       <div>
         <Navbar />
         <div className="cd-scrolling-bg cd-scrolling-bg--color-4" id="home" style={{paddingTop:"13%"}}>
+        <Segment>
           <AboutMe />
+          </Segment>
         </div>
         <div
           className="cd-scrolling-bg cd-scrolling-bg--color-3"
