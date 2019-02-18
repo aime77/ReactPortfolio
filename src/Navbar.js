@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Menu, Segment, Icon } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   state = { showNavBarOptions: false };
@@ -20,25 +21,32 @@ class Navbar extends Component {
           <Menu.Menu >
             <div style={{ opacity: this.state.showNavBarOptions ? 1 : 0 }}>
             <Menu pointing secondary>
+            
               <Menu.Item
-                name="Home"
+                name="home"
                 active={activeItem === "Home"}
                 onClick={this.handleItemClick}
+                href="#home"
                 className="navBarFont"
               />
+             
+             
               <Menu.Item
-                name="Projects"
+                name="projects"
                 active={activeItem === "Projects"}
                 onClick={this.handleItemClick}
                 href="#portfolio"
                 className="navBarFont"
               />
+             
               <Menu.Item
-                name="Contact"
+                name="contact"
                 active={activeItem === "Contact"}
                 onClick={this.handleItemClick}
+                href="#contactMe"
                 className="navBarFont"
               />
+             
               </Menu>
             </div>
             <Menu.Item name="Explore" onMouseEnter={this.showOptions}  className="navBarFont">

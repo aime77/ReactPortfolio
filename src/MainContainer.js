@@ -10,7 +10,7 @@ class MainContainer extends Component {
   render() {
     return (
       <div>
-        <div className="cd-scrolling-bg cd-scrolling-bg--color-4">
+        <div className="cd-scrolling-bg cd-scrolling-bg--color-4"  id="home">
           <AboutMe />
         </div>
         <div
@@ -18,8 +18,8 @@ class MainContainer extends Component {
           
         >
           
-            <div>
-              <h3 className="mt-3 subTitleFont" style={{textAlign:"center"}}>Portfolio</h3>
+            <div id="portfolio">
+              <h3 className="mt-3 subTitleFont"  style={{textAlign:"center"}}>Portfolio</h3>
               {/* <div>
                 <Icon
                   name="github"
@@ -34,7 +34,7 @@ class MainContainer extends Component {
               </div> */}
               <hr />
               <Container>
-              <Card.Group centered itemsPerRow={2} >
+              <Card.Group itemsPerRow={2} >
               <Projects />
               </Card.Group>
               </Container>
@@ -42,7 +42,7 @@ class MainContainer extends Component {
           </div>
       
        
-          <div className="cd-scrolling-bg__content">
+          <div className="cd-scrolling-bg__content" id="contactMe">
             <ContactForm />
           </div>
         

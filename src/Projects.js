@@ -5,14 +5,15 @@ import projectsArray from "./projectsArray";
 import bg from "./Images/bg_black.jpg" 
 class Projects extends Component {
 
-   
+   state={category:"main"}
   renderFields() {
     return _.map(
       projectsArray,
       ({ name, description, github, link, image, technologies, category }) => {
+        if(category==="main"){
         return (
             
-            <Reveal animated="move" key={name} style={{marginTop: "3%"}} instant>
+            <Reveal className="mx-4" animated="move" key={name} style={{marginTop: "3%", display:"inline-block"}} instant>
               <Reveal.Content visible><Image src={image}  size="medium" />          
               </Reveal.Content>
               <Reveal.Content hidden size="medium">
@@ -30,12 +31,15 @@ class Projects extends Component {
          
         );
       }
+      }
     );
   }
 
   render() {
 
-    return <div>{this.renderFields()}</div>;
+    return <div>
+    
+    {this.renderFields()}</div>;
   }
 }
 
