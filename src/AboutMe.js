@@ -4,7 +4,7 @@ import AnimatedIntro from "./AnimatedIntro";
 import FullStackDevCards from "./FullStackDevCards";
 import ImageChange from "./Image";
 import healthPresent from "./Images/healthpresent.jpg";
-import Picture_au2 from "./Images/Picture_au2.png";
+import Picture_au2 from "./Images/profile.JPG";
 import d3 from "./Images/d3.jpg";
 import plotly from "./Images/plotly.png";
 import python from "./Images/python.jpg";
