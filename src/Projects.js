@@ -15,7 +15,7 @@ class Projects extends Component {
               className="ui button secondary"
               onClick={() => this.setState({ category: "main" })}
             >
-              Most Relevant
+              Most Recent
             </Button>
           </Grid.Column>
           <Grid.Column width={1} className="mx-auto">

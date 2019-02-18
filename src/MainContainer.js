@@ -11,7 +11,7 @@ class MainContainer extends Component {
     return (
       <div>
         <Navbar />
-        <div className="cd-scrolling-bg cd-scrolling-bg--color-4" id="home" >
+        <div className="cd-scrolling-bg cd-scrolling-bg--color-4" id="home" style={{paddingTop:"13%"}}>
           <AboutMe />
         </div>
         <div
