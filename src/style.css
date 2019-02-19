@@ -8,8 +8,8 @@ a {
   -moz-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: lightgreen;
-  margin: 7em 7em 5em 5em;
-  padding-left: 5em;
+  margin: 7em 7em 7em 7em;
+  padding: 2em;
 }
 
 

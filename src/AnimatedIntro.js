@@ -84,7 +84,7 @@ export default class AnimatedIntro extends Component {
         <div>
       <TextyAnim
         className="aboutMeFont"
-        style={{ fontSize: "2rem" }}
+        style={{ fontSize: "2rem", textAlign:"center" }}
         enter={this.getEnter}
         leave={this.getEnter}
       >
@@ -92,7 +92,7 @@ export default class AnimatedIntro extends Component {
       </TextyAnim>
        <TextyAnim
        className="aboutMeFont"
-       style={{ fontSize: "2rem" }}
+       style={{ fontSize: "2rem", textAlign:"center" }}
        enter={this.getEnter}
        leave={this.getEnter}
      >

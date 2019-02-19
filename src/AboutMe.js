@@ -26,7 +26,7 @@ class AboutMe extends Component {
           <Card color="blue" centered>
             <ImageChange src={bootcamp} />
             <Card.Header style={{ textAlign: "center", fontSize: "1.5rem" }}>
-              Certificate - Feb. 2019
+              Certificate
             </Card.Header>
           </Card>
         );
@@ -35,7 +35,7 @@ class AboutMe extends Component {
           <Card color="blue" centered style={{ padding: "5% 5% 0 5%" }}>
             <ImageChange src={uh} />
             <Card.Header style={{ textAlign: "center", fontSize: "1.5rem" }}>
-              Bachelor of Science - May 2014
+              Bachelor of Science
             </Card.Header>
           </Card>
         );
@@ -83,8 +83,8 @@ class AboutMe extends Component {
         <Grid>
           <Grid.Row columns={2}>
             <Grid.Column>
+            <AnimatedIntro />
               <ul className="mx-auto aboutMeFont">
-                <AnimatedIntro />
                 <span style={{ color: "grey" }}>Education:</span>
                 <li
                   className="aboutMeFont"
@@ -135,7 +135,8 @@ class AboutMe extends Component {
                 </li>
               </ul>
             </Grid.Column>
-            <Grid.Column className="my-auto">
+            <Grid.Column className="my-auto mx-auto">
+            
               {this.renderPicture()}
             </Grid.Column>
           </Grid.Row>

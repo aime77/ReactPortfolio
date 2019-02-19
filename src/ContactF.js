@@ -5,11 +5,9 @@ const ContactForm = props => {
   return (
     <Form
       id="contact"
-      className="py-3 px-2 mx-2 col-lg-2 col-md-2 col-sm-10 col-sx-10 b-6 border-info px-3"
       style={{ overflowX: "hidden" }}
     >
       <h1 className="subTitleFont" style={{ textAlign: "center" }}>
-        {" "}
         Contact Me
       </h1>
       <hr />
