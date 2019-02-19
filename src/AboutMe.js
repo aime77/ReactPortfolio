@@ -79,7 +79,7 @@ class AboutMe extends Component {
 
   render() {
     return (
-      <Container style={{overflowY:"hidden"}}>
+     <Container style={{overflo:"hidden"}}>
         <Grid>
           <Grid.Row columns={2}>
             <Grid.Column>
@@ -131,7 +131,9 @@ class AboutMe extends Component {
                   className="aboutMeFont"
                   onMouseEnter={() => this.setState({ pictureOptions: 7 })}
                 >
-                  I LOVE TO LEARN AND UTILIZE WHAT I LEARN TO INOVATE.
+                 <p className="my-0"> I LOVE TO LEARN </p>
+                 <p className="my-0">AND UTILIZE WHAT I LEARN</p>
+                 <p className="my-0">TO INOVATE.</p>
                 </li>
               </ul>
             </Grid.Column>
@@ -141,7 +143,7 @@ class AboutMe extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </Container>
+        </Container>
     );
   }
 }

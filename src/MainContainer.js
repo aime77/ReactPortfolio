@@ -10,7 +10,8 @@ class MainContainer extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar/>
+        
         <div className="cd-scrolling-bg cd-scrolling-bg--color-4" id="home">
           <AboutMe />
         </div>

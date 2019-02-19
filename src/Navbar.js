@@ -15,7 +15,8 @@ class Navbar extends Component {
     const { activeItem } = this.state;
 
     return (
-      <div className="ui top right menu visible overlay fixed" >
+    
+      <div className="ui top menu fixed" >
         <Menu pointing secondary className="right menu">
           <Menu.Menu>
             <div style={{ opacity: this.state.showNavBarOptions ? 1 : 0 }}>
@@ -56,6 +57,7 @@ class Navbar extends Component {
           </Menu.Menu>
         </Menu>
       </div>
+     
     );
   }
 }

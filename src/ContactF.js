@@ -1,47 +1,37 @@
 import React from "react";
-import { Form, List } from "semantic-ui-react";
+import { List, Card } from "semantic-ui-react";
+import ContactFeed from "./ContactFeed";
 
-const ContactForm = props => {
+const ContactForm = () => {
   return (
-    <Form
+    <Card
       id="contact"
-      style={{ overflowX: "hidden" }}
+      className="mx-auto"
+      style={{ maxWidth: "500px", overflow: "hidden" }}
+      fluid
     >
-      <h1 className="subTitleFont" style={{ textAlign: "center" }}>
+      <Card.Header
+        className="subTitleFont mb-2"
+        style={{ textAlign: "center" }}
+      >
         Contact Me
-      </h1>
+      </Card.Header>
       <hr />
-      <div className="mt-3 contactFont">
-        <List>
-          <List.Item>
-            <List.Icon name="phone" />
-            <List.Content>281-248-6148</List.Content>
-          </List.Item>
-          <List.Item>
-            <List.Icon name="mail" />
-            <List.Content target="_blank">
-              <a
-                href="mailto:aime.urquieta@outlook.com"
-                style={{ color: "black" }}
-              >
-                aime.urquieta@outlook.com
-              </a>
-            </List.Content>
-          </List.Item>
-          <List.Item>
-            <List.Icon name="linkedin" />
-            <List.Content target="_blank">
-              <a
-                href="https://www.linkedin.com/in/aime-urquieta-63a741115/"
-                style={{ color: "black" }}
-              >
-                Linkedin
-              </a>
-            </List.Content>
-          </List.Item>
-        </List>
-      </div>
-    </Form>
+
+      <List animated verticalAlign="middle" className="mt-2 contactFont">
+        <ContactFeed icon="phone big" content="281-248-6148" />
+        <ContactFeed
+          icon="mail big"
+          content="aime.urquieta@outlook.com"
+          link="mailto:aime.urquieta@outlook.com"
+        />
+        <ContactFeed
+          icon="linkedin big"
+          content="Linkedin"
+          link="https://www.linkedin.com/in/aime-urquieta-63a741115/"
+        />
+      </List>
+    </Card>
   );
 };
 

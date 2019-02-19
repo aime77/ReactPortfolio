@@ -7,38 +7,20 @@ a {
   -webkit-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: lightgreen;
- 
-  padding: 2em;
+  background-color: rgb(144, 227, 238);
+  padding: 2em 4em 2em 2em;
 }
-
-
-.ml3 {
-  font-weight: 700;
-  font-size: 3.5em;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  text-align: center;
-}
-
-
-#picture {
-  width: 12rem;
-  margin-left: 150px;
-}
-
 
 body {
+  padding: 5em 0;
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: 300;
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   color: #3d3536;
 }
 
-.cardContent {
-  font-family: "Thasadith", sans-serif;
-  font-size: 1.5rem;
-  color: black;
-}
 
 .subTitleFont {
   font-family: "Thasadith", sans-serif;
@@ -48,6 +30,7 @@ body {
 .contactFont {
   font-family: "Thasadith", sans-serif;
   font-size: 2.0rem;
+  color:"black";
 }
 
 .navBarFont{
@@ -82,20 +65,24 @@ ul{
 }
 
 
-
-.cd-scrolling-bg.cd-scrolling-bg--color-1 {
-  background-color: #3d3536;
-  color: #a6989a;
-}
-
-.cd-scrolling-bg.cd-scrolling-bg--color-2 {
-  background-color: #99a478;
-  color: #3d3536;
-}
-
 .cd-scrolling-bg.cd-scrolling-bg--color-3 {
-  background-color: #b4d7a8;
+  background-image: url("./Images/bg3.png");
+  background-repeat: no-repeat;
+  height:100%;
+  width:100%;
   color: #3d3536;
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  min-height: 100%;
+  color: black;
+
+  height: auto;
 }
 
 .cd-scrolling-bg__content {
