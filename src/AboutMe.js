@@ -79,7 +79,7 @@ class AboutMe extends Component {
 
   render() {
     return (
-      <Container>
+      <Container style={{overflowY:"hidden"}}>
         <Grid>
           <Grid.Row columns={2}>
             <Grid.Column>
