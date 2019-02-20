@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, Icon } from "semantic-ui-react";
+import { Menu, Icon, Container } from "semantic-ui-react";
 
 class Navbar extends Component {
   state = { showNavBarOptions: false };
@@ -15,37 +15,37 @@ class Navbar extends Component {
     const { activeItem } = this.state;
 
     return (
-    
-      <div className="ui top menu fixed" >
-        <Menu pointing secondary className="right menu">
-          <Menu.Menu>
-            <div style={{ opacity: this.state.showNavBarOptions ? 1 : 0 }}>
-              <Menu pointing secondary>
-                <Menu.Item
-                  name="home"
-                  active={activeItem === "Home"}
-                  onClick={this.handleItemClick}
-                  href="#home"
-                  className="navBarFont"
-                />
+      <Container>
+  
+        <Menu pointing secondary>
+          <Menu.Menu position="right">
+            <Menu.Item
+              name="home"
+              active={activeItem === "home"}
+              onClick={this.handleItemClick}
+              href="#home"
+              className="navBarFont"
+              style={{ opacity: this.state.showNavBarOptions ? 1 : 0 }}
+            />
 
-                <Menu.Item
-                  name="projects"
-                  active={activeItem === "Projects"}
-                  onClick={this.handleItemClick}
-                  href="#portfolio"
-                  className="navBarFont"
-                />
+            <Menu.Item
+              name="projects"
+              active={activeItem === "projects"}
+              onClick={this.handleItemClick}
+              href="#portfolio"
+              className="navBarFont"
+              style={{ opacity: this.state.showNavBarOptions ? 1 : 0 }}
+            />
 
-                <Menu.Item
-                  name="contact"
-                  active={activeItem === "Contact"}
-                  onClick={this.handleItemClick}
-                  href="#contactMe"
-                  className="navBarFont"
-                />
-              </Menu>
-            </div>
+            <Menu.Item
+              name="contact"
+              active={activeItem === "contact"}
+              onClick={this.handleItemClick}
+              href="#contactMe"
+              className="navBarFont"
+              style={{ opacity: this.state.showNavBarOptions ? 1 : 0 }}
+            />
+
             <Menu.Item
               name="Explore"
               onMouseEnter={this.showOptions}
@@ -56,8 +56,7 @@ class Navbar extends Component {
             </Menu.Item>
           </Menu.Menu>
         </Menu>
-      </div>
-     
+      </Container>
     );
   }
 }

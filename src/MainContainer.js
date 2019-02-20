@@ -12,7 +12,7 @@ class MainContainer extends Component {
       <div>
         <Navbar/>
         
-        <div className="cd-scrolling-bg cd-scrolling-bg--color-4" id="home">
+        <div className="cd-scrolling-bg" id="home">
           <AboutMe />
         </div>
         <div
