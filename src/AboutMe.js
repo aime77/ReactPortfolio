@@ -13,6 +13,7 @@ import book from "./Images/book.jpg";
 import bootcamp from "./Images/bootcamp.png";
 import uh from "./Images/uh.png";
 import SoftwareCards from "./SoftwareCards";
+import hover from "./Images/hover.png"
 
 class AboutMe extends Component {
   state = { pictureOptions: null };
@@ -58,7 +59,7 @@ class AboutMe extends Component {
           <Card color="blue" centered>
             <ImageChange src={healthPresent} />
             <Card.Header style={{ textAlign: "center", fontSize: "1.5rem" }}>
-              Health Presentation 2017
+              Health Presentation
             </Card.Header>
           </Card>
         );
@@ -83,7 +84,8 @@ class AboutMe extends Component {
         <Grid>
           <Grid.Row columns={2}>
             <Grid.Column>
-              <AnimatedIntro />
+              <AnimatedIntro >
+              <ImageChange src={hover} size="tiny" /></AnimatedIntro >
               <List
                 animated
                 verticalAlign="middle"

@@ -35,9 +35,6 @@ body {
   font-size: 1.5rem;
 }
 
-ul {
-  list-style-type: none;
-}
 
 .aboutMeFont {
   color: #d9d9d9;
@@ -89,7 +86,7 @@ ul {
 
 @media only screen and (min-width: 768px) {
   .cd-scrolling-bg {
-    padding: 5em 0;
+    padding: 2em 0;
     font-size: 2rem;
     line-height: 2;
     font-weight: 300;
