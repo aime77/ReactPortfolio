@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Grid, Card } from "semantic-ui-react";
+import { Container, Grid, Card, List } from "semantic-ui-react";
 import AnimatedIntro from "./AnimatedIntro";
 import FullStackDevCards from "./FullStackDevCards";
 import ImageChange from "./Image";
@@ -79,71 +79,74 @@ class AboutMe extends Component {
 
   render() {
     return (
-     <Container style={{overflow:"hidden"}}>
+      <Container style={{ overflow: "hidden" }}>
         <Grid>
           <Grid.Row columns={2}>
             <Grid.Column>
-            <AnimatedIntro />
-              <ul className="mx-auto aboutMeFont">
+              <AnimatedIntro />
+              <List
+                animated
+                verticalAlign="middle"
+                className="mx-auto aboutMeFont"
+              >
                 <span style={{ color: "grey" }}>Education:</span>
-                <li
+                <List.Item
                   className="aboutMeFont"
                   onMouseEnter={() => this.setState({ pictureOptions: 1 })}
                 >
                   Full-stack Developer
-                </li>
+                </List.Item>
 
-                <li
+                <List.Item
                   className="aboutMeFont"
                   onMouseEnter={() => this.setState({ pictureOptions: 2 })}
                 >
                   Biochemistry and Biophysics
-                </li>
+                </List.Item>
 
                 <span style={{ color: "grey" }}>Lifestyles:</span>
-                <li
+                <List.Item
                   className="aboutMeFont"
                   onMouseEnter={() => this.setState({ pictureOptions: 3 })}
                 >
                   Reading
-                </li>
-                <li
+                </List.Item>
+                <List.Item
                   className="aboutMeFont"
                   onMouseEnter={() => this.setState({ pictureOptions: 4 })}
                 >
                   Health and fitness advocate
-                </li>
+                </List.Item>
                 <span style={{ color: "grey" }}>Interests:</span>
-                <li
+                <List.Item
                   className="aboutMeFont"
                   onMouseEnter={() => this.setState({ pictureOptions: 5 })}
                 >
                   Data Visualization
-                </li>
-                <li
+                </List.Item>
+                <List.Item
                   className="aboutMeFont"
                   onMouseEnter={() => this.setState({ pictureOptions: 6 })}
                 >
                   Machine learning
-                </li>
+                </List.Item>
                 <span style={{ color: "grey" }}>And one statement:</span>
-                <li
+                <List.Item
                   className="aboutMeFont"
                   onMouseEnter={() => this.setState({ pictureOptions: 7 })}
                 >
-                 <p className="my-0"> I LOVE TO LEARN </p>
-                 <p className="my-0">AND UTILIZE WHAT I LEARN</p>
-                 <p className="my-0">TO INOVATE.</p>
-                </li>
-              </ul>
+                  <p className="my-0"> I LOVE TO LEARN </p>
+                  <p className="my-0">AND UTILIZE WHAT I LEARN</p>
+                  <p className="my-0">TO INOVATE.</p>
+                </List.Item>
+              </List>
             </Grid.Column>
             <Grid.Column className="my-auto mx-auto">
-            
               {this.renderPicture()}
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        </Container>
+      </Container>
     );
   }
 }
