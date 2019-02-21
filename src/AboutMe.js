@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Grid, Card, List } from "semantic-ui-react";
+import { Container, Grid, Card, List, Icon } from "semantic-ui-react";
 import AnimatedIntro from "./AnimatedIntro";
 import FullStackDevCards from "./FullStackDevCards";
 import ImageChange from "./Image";
@@ -13,7 +13,6 @@ import book from "./Images/book.jpg";
 import bootcamp from "./Images/bootcamp.png";
 import uh from "./Images/uh.png";
 import SoftwareCards from "./SoftwareCards";
-import hover from "./Images/hover.png"
 
 class AboutMe extends Component {
   state = { pictureOptions: null };
@@ -84,13 +83,20 @@ class AboutMe extends Component {
         <Grid>
           <Grid.Row columns={2}>
             <Grid.Column>
-              <AnimatedIntro >
-              <ImageChange src={hover} size="tiny" /></AnimatedIntro >
+              <AnimatedIntro />
+               {/* <ImageChange src={hover} size="tiny" style={{overflowY:"hidden"}}  />  */}
+              <span
+              name="Explore"
+              onMouseEnter={this.showOptions}
+              className="navBarFont"
+            >
+              Hover Me<Icon disabled name="arrow alternate circle down outline" />
+            </span>
               <List
                 animated
                 verticalAlign="middle"
-                className="mx-auto aboutMeFont"
-              >
+                className="mx-auto aboutMeFont mt-0"
+              > 
                 <span style={{ color: "grey" }}>Education:</span>
                 <List.Item
                   className="aboutMeFont"

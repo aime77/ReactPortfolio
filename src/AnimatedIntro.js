@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import TextyAnim from "rc-texty/lib";
 import "rc-texty/assets/index.css";
+import { Grid } from "semantic-ui-react";
 
 const text1 = `Hello.`;
 const text2 = `My name is Aime.`;
@@ -81,26 +82,32 @@ export default class AnimatedIntro extends Component {
   };
   render() {
     return (
-        <div>
-      <TextyAnim
-        className="aboutMeFont"
-        style={{ fontSize: "2rem", textAlign:"center" }}
-        enter={this.getEnter}
-        leave={this.getEnter}
-      >
-        {text1}
-      </TextyAnim> 
-      
-       <TextyAnim
-       className="aboutMeFont"
-       style={{ fontSize: "2rem", textAlign:"center" }}
-       enter={this.getEnter}
-       leave={this.getEnter}
-     >
-       {text2}
-     </TextyAnim>
-    
-     </div>
+      <Grid style={{overflow:"hidden"}}>
+        <Grid.Row >
+          <Grid.Column>
+        
+            <TextyAnim
+              className="aboutMeFont mt-0"
+              style={{ fontSize: "2rem", textAlign: "center" }}
+              enter={this.getEnter}
+              leave={this.getEnter}
+            >
+              {text1}
+            </TextyAnim>
+         
+          
+            <TextyAnim
+              className="aboutMeFont mt-0"
+              style={{ fontSize: "2rem", textAlign: "center", overflow:"hidden" }}
+              enter={this.getEnter}
+              leave={this.getEnter}
+            >
+              {text2}
+            </TextyAnim>
+        
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     );
   }
 }
