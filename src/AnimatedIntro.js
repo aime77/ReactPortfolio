@@ -87,8 +87,8 @@ export default class AnimatedIntro extends Component {
           <Grid.Column>
         
             <TextyAnim
-              className="aboutMeFont mt-0"
-              style={{ fontSize: "2rem", textAlign: "center" }}
+              className="aboutMeFont mt-0 "
+              style={{textAlign: "center" }}
               enter={this.getEnter}
               leave={this.getEnter}
             >
@@ -97,8 +97,8 @@ export default class AnimatedIntro extends Component {
          
           
             <TextyAnim
-              className="aboutMeFont mt-0"
-              style={{ fontSize: "2rem", textAlign: "center", overflow:"hidden" }}
+              className="aboutMeFont mt-0 "
+              style={{textAlign: "center", overflow:"hidden" }}
               enter={this.getEnter}
               leave={this.getEnter}
             >

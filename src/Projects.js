@@ -14,6 +14,8 @@ class Projects extends Component {
             <Button
               className="ui button secondary"
               onClick={() => this.setState({ category: "main" })}
+              width="13%"
+
             >
               Most Recent
             </Button>
@@ -37,13 +39,13 @@ class Projects extends Component {
         if (category === this.state.category) {
           return (
             <Reveal
-              className="mx-4"
+              className="mx-2"
               animated="move"
               key={name}
               style={{ marginTop: "3%", display: "inline-block" }}
               instant
             >
-              <Reveal.Content visible>
+              <Reveal.Content visible col-sm-3>
                 <Segment>
                   <Image src={image} size="medium" />
                 </Segment>

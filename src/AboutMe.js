@@ -73,7 +73,7 @@ class AboutMe extends Component {
         return <SoftwareCards img1={tensorflow} img2={python} />;
 
       default:
-        return <ImageChange src={Picture_au2} size="medium" />;
+        return <Card color="blue" centered> <ImageChange src={Picture_au2} size="medium" /></Card>;
     }
   }
 
@@ -84,7 +84,6 @@ class AboutMe extends Component {
           <Grid.Row columns={2}>
             <Grid.Column>
               <AnimatedIntro />
-               {/* <ImageChange src={hover} size="tiny" style={{overflowY:"hidden"}}  />  */}
               <span
               name="Explore"
               onMouseEnter={this.showOptions}
