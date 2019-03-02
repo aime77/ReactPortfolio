@@ -4,30 +4,37 @@ import { Image, Reveal, Button, Grid, Segment } from "semantic-ui-react";
 import projectsArray from "./projectsArray";
 import bg from "./Images/bg_black.jpg";
 class Projects extends Component {
-  state = { category: "main" };
+  state = { category: "fullstack" };
 
   renderButtons() {
     return (
-      <Grid centered columns={2}>
+      <Grid centered columns={4}>
         <Grid.Row>
-          <Grid.Column width={1} className="mx-auto">
-            <Button
-              className="ui button secondary"
-              onClick={() => this.setState({ category: "main" })}
-              width="13%"
+          <Button
+            className="ui button secondary"
+            onClick={() => this.setState({ category: "fullstack" })}
+          >
+            Full Stack
+          </Button>
 
-            >
-              Most Recent
-            </Button>
-          </Grid.Column>
-          <Grid.Column width={1} className="mx-auto">
-            <Button
-              className="ui button secondary"
-              onClick={() => this.setState({ category: "other" })}
-            >
-              Other
-            </Button>
-          </Grid.Column>
+          <Button
+            className="ui button secondary"
+            onClick={() => this.setState({ category: "backend" })}
+          >
+            Back End
+          </Button>
+          <Button
+            className="ui button secondary"
+            onClick={() => this.setState({ category: "frontend" })}
+          >
+            Front End
+          </Button>
+          <Button
+            className="ui button secondary"
+            onClick={() => this.setState({ category: "upcoming" })}
+          >
+            Up Coming Projects
+          </Button>
         </Grid.Row>
       </Grid>
     );
@@ -50,21 +57,25 @@ class Projects extends Component {
                   <Image src={image} size="medium" />
                 </Segment>
               </Reveal.Content>
-              <Reveal.Content hidden size="large"  >
+              <Reveal.Content hidden size="large">
                 <Segment
-                  style={{ backgroundImage: `url(${bg})`, padding: "3%", height:"100%" }}
+                  style={{
+                    backgroundImage: `url(${bg})`,
+                    padding: "3%",
+                    height: "100%"
+                  }}
                 >
                   <div style={{ color: "white" }}>
                     <h2 style={{ textAlign: "center" }}> {name}</h2>
                     <p>{description}</p>
                     <p>{technologies}</p>
-
-                    <Button href={github} target="_blank" >
+                    {this.state.category!=="upcoming"?
+                    (<div><Button href={github} target="_blank">
                       GitHub
                     </Button>
                     <Button href={link} target="_blank">
                       View Site
-                    </Button>
+                    </Button></div>):""}
                   </div>
                 </Segment>
               </Reveal.Content>
